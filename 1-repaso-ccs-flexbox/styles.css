@@ -1,0 +1,50 @@
+body{
+    background-color: beige;
+}
+
+.flex-container{
+    border: 1px solid black;
+    background: #ccc;
+    padding: 20px;
+    width: 80%;
+    height: 600px;
+    margin: 0 auto;
+    display: flex;
+    /* flex-direction: row;
+    flex-wrap: wrap; */
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.box{
+    border: 1px solid rgb(70, 69, 69);
+    background-color: white;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+    text-align: center;
+    margin: 5px;
+}
+
+.b1{
+    background: lightblue;
+    order: 2;
+    flex-grow: 1;
+}
+
+.b2{
+    background: lightcoral;
+    order: 3;
+    flex-grow: 1;
+    flex-basis: 50%;
+}
+
+.b3{
+    background: lightgreen;
+    order: 1;
+    flex-grow: 1;
+}

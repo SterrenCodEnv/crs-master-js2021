@@ -1,0 +1,16 @@
+body {
+    background-color:  rgba(16, 116, 197, 0.7);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    text-align: center;
+    color: aliceblue;
+}
+
+.card{
+    border: 2px solid black;
+    background: #f2f2f2;
+    padding: 20px;
+    margin: 25px auto;
+    width: 250px;
+}

@@ -1,0 +1,57 @@
+/*
+nome -> elemento html
+.name -> clase
+#name -> id
+*/
+
+body{
+    background-color: beige;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.grid-layout{
+    height: 600px;
+    background-color: lightblue;
+    border: 1px solid black;
+    display: grid;
+    /* grid-template-columns: 80% auto;
+    grid-template-rows: 20% 10% 60% auto; */
+    grid-template-areas: 'cabecera cabecera'
+                         'menu menu'
+                         'contenido lateral'
+                         'pie pie';
+    grid-template-rows: 20% 10% auto 10%;
+}
+
+.box{
+    border: 4px solid black;
+    background-color: lightgray;
+    line-height: auto;
+    text-align: center;
+    padding: 20px;
+}
+
+.b1{
+    grid-area: cabecera;
+    background-color: lightcoral;
+}
+
+.b2{
+    grid-area: menu;
+    background-color: lightgreen;
+}
+
+.b3{
+    grid-area: contenido;
+    background-color: lightsalmon;
+}
+
+.b4{
+    grid-area: lateral;
+    background-color: lightseagreen;
+}
+
+.b5{
+    grid-area: pie;
+    background-color: lightpink;
+}
