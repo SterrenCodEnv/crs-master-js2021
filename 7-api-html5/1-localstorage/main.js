@@ -27,7 +27,7 @@ if (typeof(Storage) !== "undefined") {
     localStorage.setItem("nombre1", "Juan Ignacio");
     localStorage.setItem("nombre2", "Jose Alberto");
 
-    // TODO.: Objetos almacenados en localstorage
+    // Objetos almacenados en localstorage
     let datos = document.querySelector("#datos");
     datos.innerHTML = `<p id="nombre1">Nombre 1: ${localStorage.getItem('nombre1')} <button id='btn1'>Borrar</button></p>`;
     datos.innerHTML += `<p id="nombre2">Nombre 2: ${localStorage.getItem('nombre2')} <button id='btn2'>Borrar</button></p>`;
