@@ -1,5 +1,12 @@
 // Comprobar si el navegador es compatible con localstorage
-if (typeof(Storage) !== "undefined") {
+if (typeof(Storage) == "undefined") {
+    alert("No es compatible");
+    window.location.href = 'google.com'
+
+}
+
+console.log("TODO KO!");
+
     // Almacenar en localstorage
     localStorage.setItem("nombre", "Juan Sterren");
     
@@ -15,7 +22,7 @@ if (typeof(Storage) !== "undefined") {
     }
 
     // Eliminar todo de localstorage
-    localStorage.clear();
+    //localStorage.clear();
 
     // Comprobar si existe una clave en localstorage
     if (localStorage.getItem("nombre") === null) {
@@ -39,7 +46,6 @@ if (typeof(Storage) !== "undefined") {
         borrar("nombre2");
     });
 
-} else {
-    // No es compatible
-    console.log("No es compatible");
-}
+    const profesion = JSON.parse(localStorage.getItem("usuario")).profesion;
+    datos.innerHTML += `<br><p id="profesion"><strong>${profesion.toUpperCase()}</strong></p>`
+

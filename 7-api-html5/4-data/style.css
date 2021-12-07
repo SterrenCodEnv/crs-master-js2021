@@ -1,0 +1,31 @@
+li[data-continente="europa"]{
+    background-color: cornflowerblue;
+    color: aliceblue;
+    padding: 5px;
+    text-align: center;
+    font-size: x-large;
+}
+
+li[data-continente="america"]{
+    background-color: brown;
+    color: aliceblue;
+    padding: 5px;
+    text-align: center;
+    font-size: x-large;
+}
+
+li[data-continente="oceania"]{
+    background-color: darkcyan;
+    color: aliceblue;
+    padding: 5px;
+    text-align: center;
+    font-size: x-large;
+}
+
+li[data-continente="asia"]{
+    background-color: goldenrod;
+    color: aliceblue;
+    padding: 5px;
+    text-align: center;
+    font-size: x-large;
+}
